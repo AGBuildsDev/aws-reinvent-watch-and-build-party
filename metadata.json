@@ -1,0 +1,6 @@
+{
+  "name": "AWS re:Invent Watch & Build Party - Kwara State",
+  "description": "Official landing page for AWS re:Invent Watch & Build Party co-hosted by AWS Student Builder Group UNILORIN and AWS Student Builder Group KWASU at Ilorin Innovation Hub.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
