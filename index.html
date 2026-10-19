@@ -132,6 +132,17 @@
     .cursor-blink {
       animation: blinkCursor 1s infinite;
     }
+
+    /* Mobile safety guard: ensure floating badges or widgets never overlap the terminal card or content */
+    @media (max-width: 768px) {
+      .netlify-badge, #netlify-badge, [class*="netlify-badge"] {
+        position: static !important;
+        margin: 16px auto !important;
+        display: block !important;
+        max-width: 120px !important;
+        z-index: 20 !important;
+      }
+    }
   </style>
 </head>
 
@@ -157,8 +168,8 @@
       
       <!-- Brand Logo Display with Official Chapter Logos -->
       <a href="#hero" class="flex items-center gap-3.5 group focus:outline-none focus-visible:ring-2 focus-visible:ring-aws-orange rounded-xl p-1" aria-label="AWS re:Invent Watch &amp; Build Party Home">
-        <!-- Dual Logos Lockup -->
-        <div class="flex items-center gap-1.5 p-1 rounded-xl bg-slate-900/90 border border-white/10 group-hover:border-aws-orange/40 transition-colors shadow-inner">
+        <!-- Dual Logos Lockup (Hidden on mobile sm and below) -->
+        <div class="hidden sm:flex items-center gap-1.5 p-1 rounded-xl bg-slate-900/90 border border-white/10 group-hover:border-aws-orange/40 transition-colors shadow-inner">
           <!-- UNILORIN Logo -->
           <div class="h-8 px-1.5 py-0.5 rounded-lg bg-white flex items-center justify-center shrink-0">
             <img src="/assets/aistudio/image_24e783ac.png" alt="AWS Student Builder Group at University of Ilorin" class="h-6 w-auto object-contain" />
@@ -170,10 +181,10 @@
           </div>
         </div>
         <div class="flex flex-col">
-          <span class="font-heading font-bold text-sm sm:text-base tracking-tight text-white flex items-center gap-1.5">
-            SBG UNILORIN <span class="text-aws-orange font-black">×</span> SBG KWASU
+          <span class="font-heading font-bold text-sm sm:text-base tracking-tight text-white flex items-center gap-1.5 whitespace-nowrap">
+            SBG UNILORIN <span class="text-aws-orange font-black">×</span> KWASU
           </span>
-          <span class="text-[11px] text-aws-slateMuted font-mono uppercase tracking-wider">
+          <span class="hidden sm:inline text-[11px] text-aws-slateMuted font-mono uppercase tracking-wider">
             re:Invent 2026 Watch &amp; Build
           </span>
         </div>
@@ -271,19 +282,11 @@
             Experience the excitement of AWS re:Invent right here in Ilorin! Join student builders, developers, and tech lovers from UNILORIN and KWASU for keynote highlights, live hands-on building, and high-impact networking.
           </p>
 
-          <!-- Official Chapter Badge Lockup -->
-          <div class="inline-flex items-center gap-3 p-2 rounded-2xl glass-card border border-white/10 mb-8 max-w-xl">
-            <div class="bg-white rounded-lg px-2.5 py-1.5 shadow-sm flex items-center justify-center">
-              <img src="/assets/aistudio/image_24e783ac.png" alt="AWS Student Builder Group at University of Ilorin" class="h-6 sm:h-7 w-auto object-contain" />
-            </div>
-            <span class="text-aws-orange font-black text-sm font-mono">×</span>
-            <div class="bg-slate-950 rounded-lg px-2.5 py-1.5 border border-white/15 shadow-sm flex items-center justify-center">
-              <img src="/assets/aistudio/image_5ca9f50d.png" alt="AWS Student Builder Group at Kwara State University" class="h-6 sm:h-7 w-auto object-contain" />
-            </div>
-            <div class="text-[11px] text-aws-slateMuted font-mono text-left hidden sm:block pl-2 border-l border-white/10">
-              <span class="text-slate-200 font-semibold block">Official Student Chapters</span>
-              UNILORIN × KWASU Collaboration
-            </div>
+          <!-- Official Student Chapters Sub-text Badge (Clean, No Duplicate Logo Box) -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-white/10 mb-8 text-xs font-mono text-slate-300">
+            <span class="w-1.5 h-1.5 rounded-full bg-aws-orange"></span>
+            <span>Official Student Chapters:</span>
+            <span class="text-white font-semibold">UNILORIN × KWASU Collaboration</span>
           </div>
 
           <!-- CTA Buttons Row (Luma + Add to Calendar) -->
@@ -398,6 +401,20 @@
               </button>
             </div>
 
+          </div>
+
+          <!-- Anchored beneath terminal card (prevents floating badge overlap on mobile) -->
+          <div class="mt-3 flex items-center justify-between text-[11px] font-mono text-aws-slateMuted px-1">
+            <span class="flex items-center gap-1.5">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span>AWS Cloud Console Ready</span>
+            </span>
+            <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-teal-400 transition-colors flex items-center gap-1 text-[11px]">
+              <svg class="w-3 h-3 text-teal-400" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0a1.16 1.16 0 0 0-.82.34L.34 11.18a1.16 1.16 0 0 0 0 1.64l10.84 10.84c.45.45 1.19.45 1.64 0l10.84-10.84a1.16 1.16 0 0 0 0-1.64L12.82.34A1.16 1.16 0 0 0 12 0z"/>
+              </svg>
+              <span>Powered by Netlify</span>
+            </a>
           </div>
 
         </div>
@@ -1120,11 +1137,19 @@
             <strong class="text-white block font-heading mb-1">Community Note:</strong>
             Community chapters connect locally via WhatsApp &amp; Meetup groups, while official event pass registration takes place exclusively on <strong class="text-aws-orange">Luma</strong>.
           </div>
-          <div class="inline-flex items-center gap-2 text-xs font-mono text-slate-400 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
-            <svg class="w-3.5 h-3.5 text-aws-orange" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19.34 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.66-4.96z"/>
-            </svg>
-            <span>Event Registration Powered by Luma</span>
+          <div class="flex flex-wrap items-center gap-2">
+            <div class="inline-flex items-center gap-2 text-xs font-mono text-slate-400 bg-white/5 px-3 py-1.5 rounded-lg border border-white/10">
+              <svg class="w-3.5 h-3.5 text-aws-orange" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19.34 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.66-4.96z"/>
+              </svg>
+              <span>Registration Powered by Luma</span>
+            </div>
+            <a href="https://www.netlify.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-mono text-slate-400 hover:text-white bg-white/5 hover:bg-white/10 px-3 py-1.5 rounded-lg border border-white/10 transition-colors">
+              <svg class="w-3.5 h-3.5 text-teal-400" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.49 19.37l-2.61-2.61a.58.58 0 0 1 0-.82l2.61-2.61c.23-.23.6-.23.82 0l2.61 2.61a.58.58 0 0 1 0 .82l-2.61 2.61a.58.58 0 0 1-.82 0zm11.02-14.74l2.61 2.61a.58.58 0 0 1 0 .82l-2.61 2.61a.58.58 0 0 1-.82 0l-2.61-2.61a.58.58 0 0 1 0-.82l2.61-2.61c.23-.23.6-.23.82 0zM12 0a1.16 1.16 0 0 0-.82.34L.34 11.18a1.16 1.16 0 0 0 0 1.64l10.84 10.84c.45.45 1.19.45 1.64 0l10.84-10.84a1.16 1.16 0 0 0 0-1.64L12.82.34A1.16 1.16 0 0 0 12 0z"/>
+              </svg>
+              <span>Powered by Netlify</span>
+            </a>
           </div>
         </div>
 
