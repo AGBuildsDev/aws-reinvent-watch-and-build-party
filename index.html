@@ -39,8 +39,8 @@
 
   <!-- Twitter / X Cards -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@awssbgkwasu" />
-  <meta name="twitter:creator" content="@awssbgkwasu" />
+  <meta name="twitter:site" content="@AWSRE_INVENT" />
+  <meta name="twitter:creator" content="@AWSRE_INVENT" />
   <meta name="twitter:url" content="https://lu.ma/aws-reinvent-kwara" />
   <meta name="twitter:title" content="AWS re:Invent 2026 Watch &amp; Build Party — Kwara State" />
   <meta name="twitter:description" content="Official collaborative event by SBG UNILORIN × SBG KWASU at Ilorin Innovation Hub. Date: TBA. Keynote highlights, live cloud build labs, swag, and 500+ builders. RSVP free on Luma!" />
@@ -56,6 +56,12 @@
         "@type": "Event",
         "@id": "https://lu.ma/aws-reinvent-kwara#event",
         "name": "AWS re:Invent 2026 Watch & Build Party — Kwara State",
+        "sameAs": [
+          "https://x.com/AWSRE_INVENT",
+          "https://www.instagram.com/awsre.invent/",
+          "https://www.linkedin.com/company/aws-re-invent-watch-build/",
+          "https://www.tiktok.com/@awsreinvent"
+        ],
         "description": "Experience AWS re:Invent 2026 in Kwara State! Co-hosted by AWS Student Builder Group UNILORIN and AWS Student Builder Group KWASU. Date: TBA. Join 500+ builders at Ilorin Innovation Hub for keynote streams, hands-on cloud labs, and cross-campus networking.",
         "eventStatus": "https://schema.org/EventScheduled",
         "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
@@ -333,11 +339,15 @@
       </a>
 
       <!-- Desktop Anchor Links -->
-      <nav class="hidden md:flex items-center gap-7" aria-label="Main Navigation">
+      <nav class="hidden md:flex items-center gap-6" aria-label="Main Navigation">
         <a href="#about" class="text-sm font-medium text-slate-300 hover:text-purple-400 transition-colors duration-200">About</a>
         <a href="#highlights" class="text-sm font-medium text-slate-300 hover:text-purple-400 transition-colors duration-200">Highlights</a>
         <a href="#prerequisites" class="text-sm font-medium text-slate-300 hover:text-purple-400 transition-colors duration-200">Prerequisites</a>
         <a href="#venue" class="text-sm font-medium text-slate-300 hover:text-purple-400 transition-colors duration-200">Venue &amp; Transit</a>
+        <a href="#socials" class="text-sm font-medium text-slate-300 hover:text-purple-400 transition-colors duration-200 flex items-center gap-1.5">
+          <span>Socials</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse"></span>
+        </a>
         <a href="#faq" class="text-sm font-medium text-slate-300 hover:text-purple-400 transition-colors duration-200">FAQ</a>
       </nav>
 
@@ -373,6 +383,10 @@
         <a href="#highlights" onclick="closeMobileNav()" class="px-3 py-2 text-base font-medium text-slate-200 hover:text-purple-400 hover:bg-white/5 rounded-lg">Highlights</a>
         <a href="#prerequisites" onclick="closeMobileNav()" class="px-3 py-2 text-base font-medium text-slate-200 hover:text-purple-400 hover:bg-white/5 rounded-lg">Prerequisites</a>
         <a href="#venue" onclick="closeMobileNav()" class="px-3 py-2 text-base font-medium text-slate-200 hover:text-purple-400 hover:bg-white/5 rounded-lg">Venue &amp; Transit</a>
+        <a href="#socials" onclick="closeMobileNav()" class="px-3 py-2 text-base font-medium text-purple-300 hover:text-purple-400 hover:bg-white/5 rounded-lg flex items-center justify-between">
+          <span>Official Socials</span>
+          <span class="text-[11px] font-mono text-purple-400 bg-purple-500/10 px-2 py-0.5 rounded border border-purple-500/30">Live Pages</span>
+        </a>
         <a href="#faq" onclick="closeMobileNav()" class="px-3 py-2 text-base font-medium text-slate-200 hover:text-purple-400 hover:bg-white/5 rounded-lg">FAQ</a>
         <div class="pt-2">
           <a href="https://lu.ma/find" target="_blank" rel="noopener noreferrer" 
@@ -494,6 +508,12 @@
               <div class="text-slate-300 text-[11px]">
                 &gt; Co-Hosts: SBG UNILORIN <span class="text-purple-400">×</span> SBG KWASU [<span class="text-emerald-400 font-semibold">CONNECTED</span>]
               </div>
+              <div class="text-purple-300 text-[11px] flex items-center gap-1.5 pt-0.5">
+                &gt; Official Channels:
+                <a href="https://x.com/AWSRE_INVENT" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:underline">@AWSRE_INVENT</a>
+                <span class="text-slate-500">·</span>
+                <a href="https://www.instagram.com/awsre.invent/" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:underline">@awsre.invent</a>
+              </div>
             </div>
 
             <!-- Event Schedule Status Header in JetBrains Mono -->
@@ -534,9 +554,23 @@
               </div>
             </div>
 
-            <!-- Quick Share Action in Terminal -->
-            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
-              <span class="text-[11px] font-mono text-slate-400">RSVP: Free on Luma</span>
+            <!-- Quick Share & Official Channels in Terminal -->
+            <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="text-[10px] font-mono text-slate-400 hidden sm:inline">Follow:</span>
+                <a href="https://x.com/AWSRE_INVENT" target="_blank" rel="noopener noreferrer" title="Follow @AWSRE_INVENT on X" class="w-6 h-6 rounded-md bg-white/5 hover:bg-white/10 flex items-center justify-center text-slate-400 hover:text-sky-400 transition-colors">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/awsre.invent/" target="_blank" rel="noopener noreferrer" title="Follow @awsre.invent on Instagram" class="w-6 h-6 rounded-md bg-white/5 hover:bg-white/10 flex items-center justify-center text-slate-400 hover:text-pink-400 transition-colors">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/company/aws-re-invent-watch-build/" target="_blank" rel="noopener noreferrer" title="Follow on LinkedIn" class="w-6 h-6 rounded-md bg-white/5 hover:bg-white/10 flex items-center justify-center text-slate-400 hover:text-blue-400 transition-colors">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="https://www.tiktok.com/@awsreinvent" target="_blank" rel="noopener noreferrer" title="Follow @awsreinvent on TikTok" class="w-6 h-6 rounded-md bg-white/5 hover:bg-white/10 flex items-center justify-center text-slate-400 hover:text-fuchsia-400 transition-colors">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+                </a>
+              </div>
               <button onclick="shareEventLink()" class="inline-flex items-center gap-1.5 text-xs font-mono text-purple-400 hover:text-purple-300 transition-colors">
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
                 <span>Share Link</span>
@@ -1179,10 +1213,173 @@
       </div>
 
     </div>
+  <!-- ========================================================================= -->
+  <!-- 7. OFFICIAL EVENT SOCIAL CHANNELS SECTION                                 -->
+  <!-- ========================================================================= -->
+  <section id="socials" class="py-20 md:py-28 relative z-10 border-t border-white/5 bg-slate-900/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-purple-500/10 border border-purple-500/30 text-purple-300 font-mono text-xs uppercase tracking-wider mb-4 shadow-sm">
+          <span class="w-1.5 h-1.5 rounded-full bg-purple-400 animate-pulse"></span>
+          <span>Official Event Channels</span>
+          <span class="text-purple-400/50">·</span>
+          <span class="text-amber-400">Join the Community</span>
+        </div>
+        <h2 class="font-heading text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-4">
+          Connect With Us Everywhere
+        </h2>
+        <p class="text-base sm:text-lg text-aws-slateMuted">
+          Official social media accounts for the <strong class="text-white">AWS re:Invent Kwara Watch &amp; Build Party</strong> are officially live! Follow our channels for keynote updates, speaker announcements, behind-the-scenes footage, and attendee spotlights.
+        </p>
+      </div>
+
+      <!-- 4-Card Responsive Grid for Event Socials -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+        
+        <!-- 1. X (Twitter) Card -->
+        <div class="glass-card interactive-card rounded-2xl p-6 border border-white/10 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-28 h-28 bg-sky-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-sky-500/20 transition-all"></div>
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/15 flex items-center justify-center text-white group-hover:scale-110 group-hover:text-sky-400 group-hover:border-sky-500/40 transition-all shadow-inner">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </div>
+              <span class="text-[11px] font-mono uppercase tracking-wider text-sky-400 bg-sky-500/10 px-2.5 py-1 rounded-full border border-sky-500/25">Live Threads</span>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-white mb-1 group-hover:text-sky-400 transition-colors">
+              X (Twitter)
+            </h3>
+            <div class="text-xs font-mono text-purple-300 mb-3 flex items-center gap-1.5">
+              <span>@AWSRE_INVENT</span>
+            </div>
+            <p class="text-xs text-aws-slateMuted leading-relaxed font-sans mb-6">
+              Real-time keynote reactions, instant schedule drops, speaker reveals, and developer threads. Join the conversation with #AWSreInventKwara!
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10">
+            <a href="https://x.com/AWSRE_INVENT" target="_blank" rel="noopener noreferrer" 
+               class="w-full inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-sky-500/20 hover:border-sky-500/40 hover:text-sky-300 text-slate-200 text-xs font-heading font-semibold py-2.5 px-4 rounded-xl border border-white/10 transition-all">
+              <span>Follow @AWSRE_INVENT</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 2. Instagram Card -->
+        <div class="glass-card interactive-card rounded-2xl p-6 border border-white/10 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-28 h-28 bg-pink-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-pink-500/20 transition-all"></div>
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/15 flex items-center justify-center text-white group-hover:scale-110 group-hover:text-pink-400 group-hover:border-pink-500/40 transition-all shadow-inner">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              </div>
+              <span class="text-[11px] font-mono uppercase tracking-wider text-pink-400 bg-pink-500/10 px-2.5 py-1 rounded-full border border-pink-500/25">Photo &amp; Reels</span>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-white mb-1 group-hover:text-pink-400 transition-colors">
+              Instagram
+            </h3>
+            <div class="text-xs font-mono text-purple-300 mb-3 flex items-center gap-1.5">
+              <span>@awsre.invent</span>
+            </div>
+            <p class="text-xs text-aws-slateMuted leading-relaxed font-sans mb-6">
+              Exclusive campus community takeovers, hall preparation highlights, live event day coverage, stories, and builder photo spotlights.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10">
+            <a href="https://www.instagram.com/awsre.invent/" target="_blank" rel="noopener noreferrer" 
+               class="w-full inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-pink-500/20 hover:border-pink-500/40 hover:text-pink-300 text-slate-200 text-xs font-heading font-semibold py-2.5 px-4 rounded-xl border border-white/10 transition-all">
+              <span>Follow @awsre.invent</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 3. LinkedIn Card -->
+        <div class="glass-card interactive-card rounded-2xl p-6 border border-white/10 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-28 h-28 bg-blue-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-blue-500/20 transition-all"></div>
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/15 flex items-center justify-center text-white group-hover:scale-110 group-hover:text-blue-400 group-hover:border-blue-500/40 transition-all shadow-inner">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <span class="text-[11px] font-mono uppercase tracking-wider text-blue-400 bg-blue-500/10 px-2.5 py-1 rounded-full border border-blue-500/25">Professional</span>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-white mb-1 group-hover:text-blue-400 transition-colors">
+              LinkedIn
+            </h3>
+            <div class="text-xs font-mono text-purple-300 mb-3 flex items-center gap-1.5">
+              <span>re:Invent Watch &amp; Build</span>
+            </div>
+            <p class="text-xs text-aws-slateMuted leading-relaxed font-sans mb-6">
+              Connect with cloud industry speakers, organizers, career mentors, and expand your professional network with tech leaders across Kwara.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10">
+            <a href="https://www.linkedin.com/company/aws-re-invent-watch-build/" target="_blank" rel="noopener noreferrer" 
+               class="w-full inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-blue-500/20 hover:border-blue-500/40 hover:text-blue-300 text-slate-200 text-xs font-heading font-semibold py-2.5 px-4 rounded-xl border border-white/10 transition-all">
+              <span>Connect on LinkedIn</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- 4. TikTok Card -->
+        <div class="glass-card interactive-card rounded-2xl p-6 border border-white/10 flex flex-col justify-between group relative overflow-hidden">
+          <div class="absolute -top-12 -right-12 w-28 h-28 bg-fuchsia-500/10 rounded-full blur-2xl pointer-events-none group-hover:bg-fuchsia-500/20 transition-all"></div>
+          <div>
+            <div class="flex items-center justify-between mb-5">
+              <div class="w-12 h-12 rounded-xl bg-white/5 border border-white/15 flex items-center justify-center text-white group-hover:scale-110 group-hover:text-fuchsia-400 group-hover:border-fuchsia-500/40 transition-all shadow-inner">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+              </div>
+              <span class="text-[11px] font-mono uppercase tracking-wider text-fuchsia-400 bg-fuchsia-500/10 px-2.5 py-1 rounded-full border border-fuchsia-500/25">Hype &amp; Clips</span>
+            </div>
+            <h3 class="font-heading text-lg font-bold text-white mb-1 group-hover:text-fuchsia-400 transition-colors">
+              TikTok
+            </h3>
+            <div class="text-xs font-mono text-purple-300 mb-3 flex items-center gap-1.5">
+              <span>@awsreinvent</span>
+            </div>
+            <p class="text-xs text-aws-slateMuted leading-relaxed font-sans mb-6">
+              High-energy short clips, humorous developer challenges, student hackathon prep, and snackable AWS cloud tutorials.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-white/10">
+            <a href="https://www.tiktok.com/@awsreinvent" target="_blank" rel="noopener noreferrer" 
+               class="w-full inline-flex items-center justify-center gap-2 bg-white/5 hover:bg-fuchsia-500/20 hover:border-fuchsia-500/40 hover:text-fuchsia-300 text-slate-200 text-xs font-heading font-semibold py-2.5 px-4 rounded-xl border border-white/10 transition-all">
+              <span>Follow @awsreinvent</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Social Strip & Hashtag Banner -->
+      <div class="mt-10 p-5 rounded-2xl glass-card border border-purple-500/25 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-xl bg-purple-500/20 text-purple-400 flex items-center justify-center shrink-0 border border-purple-500/30">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/></svg>
+          </div>
+          <div>
+            <div class="text-xs font-mono text-purple-300 font-semibold uppercase tracking-wider">Official Event Hashtags</div>
+            <div class="text-white font-heading font-bold text-sm sm:text-base">#AWSreInventKwara &nbsp;·&nbsp; #SBGUnilorin &nbsp;·&nbsp; #SBGKwasu &nbsp;·&nbsp; #AWSreInvent</div>
+          </div>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="shareEventLink()" class="inline-flex items-center gap-2 bg-purple-600/20 hover:bg-purple-600/30 text-purple-300 hover:text-white px-4 py-2 rounded-xl text-xs font-mono border border-purple-500/30 transition-colors">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            <span>Share All Pages</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- ========================================================================= -->
-  <!-- BONUS: FREQUENTLY ASKED QUESTIONS SECTION                                 -->
+  <!-- 8. FREQUENTLY ASKED QUESTIONS SECTION                                     -->
   <!-- ========================================================================= -->
   <section id="faq" class="py-20 relative z-10 border-t border-white/5 bg-slate-900/20">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -1256,6 +1453,17 @@
           </p>
         </details>
 
+        <!-- FAQ 6 -->
+        <details class="glass-card rounded-xl p-5 border border-white/10 group cursor-pointer transition-all duration-200 hover:border-purple-500/40 hover:shadow-lg hover:shadow-purple-500/10">
+          <summary class="font-heading font-bold text-base sm:text-lg text-white flex items-center justify-between list-none">
+            <span>Where can I follow official event updates, speaker drops, and build challenges?</span>
+            <span class="text-purple-400 transition-transform duration-200 group-open:rotate-180 font-mono text-xs">▼</span>
+          </summary>
+          <p class="text-sm text-aws-slateMuted mt-3 pt-3 border-t border-white/5 leading-relaxed font-sans">
+            Follow the official event accounts on <a href="https://x.com/AWSRE_INVENT" target="_blank" rel="noopener noreferrer" class="text-sky-400 hover:underline font-mono">X (@AWSRE_INVENT)</a>, <a href="https://www.instagram.com/awsre.invent/" target="_blank" rel="noopener noreferrer" class="text-pink-400 hover:underline font-mono">Instagram (@awsre.invent)</a>, <a href="https://www.tiktok.com/@awsreinvent" target="_blank" rel="noopener noreferrer" class="text-fuchsia-400 hover:underline font-mono">TikTok (@awsreinvent)</a>, and <a href="https://www.linkedin.com/company/aws-re-invent-watch-build/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline font-mono">LinkedIn (AWS re:Invent Watch &amp; Build)</a>! We post keynote alerts, speaker profiles, event date confirmations, and live streams across these pages.
+          </p>
+        </details>
+
       </div>
 
     </div>
@@ -1302,10 +1510,10 @@
       </div>
 
       <!-- Main Footer Columns -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 pb-12 border-b border-white/10 text-left">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 pb-12 border-b border-white/10 text-left">
         
         <!-- Brand & Description -->
-        <div class="md:col-span-6 lg:col-span-6">
+        <div class="sm:col-span-2 lg:col-span-4">
           <div class="flex items-center gap-2.5 mb-4">
             <div class="bg-white rounded-lg px-2.5 py-1 border border-white/20 shadow-sm flex items-center justify-center">
               <img src="/assets/aistudio/image_24e783ac.png" alt="AWS SBG UNILORIN" class="h-6 w-auto object-contain" />
@@ -1339,8 +1547,62 @@
           </div>
         </div>
 
+        <!-- Official Event Handles (Prominent Column) -->
+        <div class="lg:col-span-3">
+          <h4 class="text-xs font-mono uppercase tracking-wider text-purple-400 font-bold mb-4 flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-purple-400 inline-block animate-pulse"></span>
+            <span>Official Event Pages</span>
+          </h4>
+          <ul class="space-y-2.5 text-sm">
+            <li>
+              <a href="https://x.com/AWSRE_INVENT" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-sky-400 transition-colors flex items-center gap-2.5 group">
+                <div class="w-6 h-6 rounded-md bg-white/5 group-hover:bg-sky-500/20 flex items-center justify-center shrink-0 text-slate-400 group-hover:text-sky-400 transition-colors">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </div>
+                <div>
+                  <span class="block text-xs font-medium text-white">X (Twitter)</span>
+                  <span class="block text-[11px] font-mono text-aws-slateMuted group-hover:text-sky-400">@AWSRE_INVENT</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/awsre.invent/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-pink-400 transition-colors flex items-center gap-2.5 group">
+                <div class="w-6 h-6 rounded-md bg-white/5 group-hover:bg-pink-500/20 flex items-center justify-center shrink-0 text-slate-400 group-hover:text-pink-400 transition-colors">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </div>
+                <div>
+                  <span class="block text-xs font-medium text-white">Instagram</span>
+                  <span class="block text-[11px] font-mono text-aws-slateMuted group-hover:text-pink-400">@awsre.invent</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/aws-re-invent-watch-build/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-blue-400 transition-colors flex items-center gap-2.5 group">
+                <div class="w-6 h-6 rounded-md bg-white/5 group-hover:bg-blue-500/20 flex items-center justify-center shrink-0 text-slate-400 group-hover:text-blue-400 transition-colors">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <div>
+                  <span class="block text-xs font-medium text-white">LinkedIn Page</span>
+                  <span class="block text-[11px] font-mono text-aws-slateMuted group-hover:text-blue-400">re:Invent Watch &amp; Build</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.tiktok.com/@awsreinvent" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-fuchsia-400 transition-colors flex items-center gap-2.5 group">
+                <div class="w-6 h-6 rounded-md bg-white/5 group-hover:bg-fuchsia-500/20 flex items-center justify-center shrink-0 text-slate-400 group-hover:text-fuchsia-400 transition-colors">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+                </div>
+                <div>
+                  <span class="block text-xs font-medium text-white">TikTok</span>
+                  <span class="block text-[11px] font-mono text-aws-slateMuted group-hover:text-fuchsia-400">@awsreinvent</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+
         <!-- SBG UNILORIN Links -->
-        <div class="md:col-span-3 lg:col-span-3">
+        <div class="lg:col-span-2 sm:col-span-1">
           <h4 class="text-xs font-mono uppercase tracking-wider text-blue-400 font-bold mb-4 flex items-center gap-1.5">
             <span class="w-2 h-2 rounded-full bg-blue-400 inline-block"></span>
             <span>SBG UNILORIN</span>
@@ -1355,26 +1617,26 @@
             <li>
               <a href="https://ng.linkedin.com/company/aws-student-builder-university-of-ilorin" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-blue-400 transition-colors flex items-center gap-2">
                 <svg class="w-3.5 h-3.5 text-blue-400 shrink-0 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                <span>LinkedIn Page</span>
+                <span>LinkedIn</span>
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/awssbg_unilorin/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-pink-400 transition-colors flex items-center gap-2">
                 <svg class="w-3.5 h-3.5 text-pink-400 shrink-0 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                <span>Instagram @awssbg_unilorin</span>
+                <span>Instagram</span>
               </a>
             </li>
             <li>
               <a href="https://www.meetup.com/aws-sbg-the-university-of-ilorin/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-red-400 transition-colors flex items-center gap-2">
                 <svg class="w-3.5 h-3.5 text-red-400 shrink-0 fill-current" viewBox="0 0 24 24"><path d="M19.34 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.66-4.96z"/></svg>
-                <span>Meetup Chapter</span>
+                <span>Meetup</span>
               </a>
             </li>
           </ul>
         </div>
 
         <!-- SBG KWASU Links -->
-        <div class="md:col-span-3 lg:col-span-3">
+        <div class="lg:col-span-3 sm:col-span-1">
           <h4 class="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold mb-4 flex items-center gap-1.5">
             <span class="w-2 h-2 rounded-full bg-emerald-400 inline-block"></span>
             <span>SBG KWASU</span>
@@ -1383,25 +1645,25 @@
             <li>
               <a href="https://www.linkedin.com/company/aws-student-builder-group-kwasu" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-blue-400 transition-colors flex items-center gap-2">
                 <svg class="w-3.5 h-3.5 text-blue-400 shrink-0 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                <span>LinkedIn Page</span>
+                <span>LinkedIn</span>
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/awssbgkwasu/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-pink-400 transition-colors flex items-center gap-2">
                 <svg class="w-3.5 h-3.5 text-pink-400 shrink-0 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                <span>Instagram @awssbgkwasu</span>
+                <span>Instagram</span>
               </a>
             </li>
             <li>
               <a href="https://www.meetup.com/aws-sbg-at-kwara-state-university-malete-campus/" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-red-400 transition-colors flex items-center gap-2">
                 <svg class="w-3.5 h-3.5 text-red-400 shrink-0 fill-current" viewBox="0 0 24 24"><path d="M19.34 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.66-4.96z"/></svg>
-                <span>Meetup Chapter</span>
+                <span>Meetup</span>
               </a>
             </li>
             <li>
               <a href="https://x.com/awssbgkwasu" target="_blank" rel="noopener noreferrer" class="text-slate-300 hover:text-sky-400 transition-colors flex items-center gap-2">
                 <svg class="w-3.5 h-3.5 text-sky-400 shrink-0 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                <span>X (Twitter) @awssbgkwasu</span>
+                <span>X / Twitter</span>
               </a>
             </li>
           </ul>
@@ -1470,6 +1732,29 @@
         <div class="flex items-center justify-between">
           <span class="text-slate-400">Registration:</span>
           <span class="font-semibold text-emerald-400">Free Pass (via Luma)</span>
+        </div>
+      </div>
+
+      <!-- Follow Official Event Handles Strip -->
+      <div class="mb-5 p-3 rounded-xl bg-purple-500/10 border border-purple-500/20 text-xs text-left">
+        <span class="text-[11px] font-mono text-purple-300 uppercase tracking-wider block font-semibold mb-2">Follow Official Event Handles:</span>
+        <div class="grid grid-cols-4 gap-2">
+          <a href="https://x.com/AWSRE_INVENT" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-900/80 hover:bg-sky-500/20 text-slate-300 hover:text-sky-400 border border-white/10 flex flex-col items-center justify-center gap-1 transition-colors group">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            <span class="text-[10px] font-mono">X</span>
+          </a>
+          <a href="https://www.instagram.com/awsre.invent/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-900/80 hover:bg-pink-500/20 text-slate-300 hover:text-pink-400 border border-white/10 flex flex-col items-center justify-center gap-1 transition-colors group">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            <span class="text-[10px] font-mono">Instagram</span>
+          </a>
+          <a href="https://www.linkedin.com/company/aws-re-invent-watch-build/" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-900/80 hover:bg-blue-500/20 text-slate-300 hover:text-blue-400 border border-white/10 flex flex-col items-center justify-center gap-1 transition-colors group">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <span class="text-[10px] font-mono">LinkedIn</span>
+          </a>
+          <a href="https://www.tiktok.com/@awsreinvent" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-900/80 hover:bg-fuchsia-500/20 text-slate-300 hover:text-fuchsia-400 border border-white/10 flex flex-col items-center justify-center gap-1 transition-colors group">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/></svg>
+            <span class="text-[10px] font-mono">TikTok</span>
+          </a>
         </div>
       </div>
 
