@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.aws-reinvent-watch-and-build-party.pxxlspace.cv/sitemap.xml
