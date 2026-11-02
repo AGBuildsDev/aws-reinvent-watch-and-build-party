@@ -1,6 +1,6 @@
 {
-  "summary":  "Updated implementation plan documenting removal of schedule and lab-preview sections, alongside elevated conference lanyard builder pass with user photo upload capability, community pass labeling (no VIP), and removal of technical region tags (af-south-1).",
-  "updatedAt":  "2026-11-01T13:35:13.030357511Z",
-  "requestFeedback":  true,
-  "userFacing":  true
+  "summary": "Updated implementation plan documenting the Builder Spotlight Flyer redesign based on the official event flyer header, footer, color scheme, and typography, alongside the updated naming and sharing integrations.",
+  "updatedAt": "2026-11-02T18:34:22.643467927Z",
+  "requestFeedback": true,
+  "userFacing": true
 }

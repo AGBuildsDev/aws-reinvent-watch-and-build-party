@@ -1,23 +1,32 @@
-# AWS re:Invent 2026 Kwara State — Site Refinement & Builder Pass Enhancement
+# AWS re:Invent 2026 Kwara State — Builder Spotlight Flyer Redesign
 
-### Overview of Changes Completed
-1. **Removed Non-Essential Sections as Requested**:
-   - Removed the **Live Architecture Stack ("What We're Building On The Console")** section (`#lab-preview`).
-   - Removed the temporary **Schedule & Agenda** section (`#schedule`).
-   - Cleaned up top desktop navigation and mobile navigation links accordingly.
-   - Removed unused JavaScript helper functions (`filterSchedule`, `selectLabService`, `labServicesData`).
+### Summary of Enhancements
 
-2. **Upgraded the Builder Pass Generator (`#badge-generator`)**:
-   - **Photo Upload Capability**: Added a dedicated file uploader supporting headshots/avatars (PNG, JPG, WebP) with instant live card preview, a 40px active thumbnail indicator, and a one-click remove option.
-   - **Elevated Conference Lanyard Badge Design**:
-     - Realistic die-cut lanyard slot cutout representation at the top of the badge card.
-     - Attendee photo frame with an iridescent multi-stop metallic gradient ring (`from-amber-400 via-purple-500 to-sky-400`).
-     - Default builder silhouette avatar fallback when no custom photo is provided.
-     - Dual chapter logo lockup for UNILORIN × KWASU.
-     - Dynamic attendee name, campus affiliation, and builder track badges.
-     - Date & venue bar: `Saturday, 5th December, 2026 · Ilorin Innovation Hub · 9:00 AM WAT`.
-   - **Removed Technicality & Preferential Wording**:
-     - Removed all mentions of `'af-south-1'` from both the visual card and the exported canvas image.
-     - Removed all `'VIP'` and `'VERIFIED VIP'` badges and labels; replaced with `"OFFICIAL BUILDER PASS"`, `"REGISTERED ATTENDEE"`, and `"100% FREE PASS"` so attendees are not expecting preferential VIP treatment.
-   - **High-Resolution PNG Canvas Export**:
-     - Canvas rendering (`downloadBuilderBadge()`) renders user photo with rounded rectangular clipping, geometric background grid, ambient radial glow, official typography, and barcode scanlines.
+1. **Renamed Concept to "Builder Spotlight Flyer"**:
+   - Replaced "I'll be live" with **"Builder Spotlight"** across desktop navigation, mobile navigation drawer, and the generator section.
+   - Designed to feel like a high-production conference community spotlight poster celebrating each attendee.
+
+2. **Header Redesign (Inspired by the Official Event Flyer)**:
+   - Floating dark container pill at the top:
+     - Left: KWASU emerald chip emblem with *"AWS Student Builder Group at Kwara State University"*.
+     - Center: *"X"*.
+     - Right: UNILORIN purple chip emblem with *"AWS Student Builder Group University of Ilorin"*.
+   - Typography wordmark:
+     - Prominent *"AWS"* tag and *"re:Invent"* headline.
+     - Bordered title box: *"[ Kwara State Watch & Build Party ]"*.
+     - Official subtitle: *"From Las Vegas to the Ilorin Innovation Hub! We're bringing the global cloud conference experience home to Kwara State."*
+
+3. **Creative Attendee Spotlight Centerpiece**:
+   - High-contrast card with an emerald-to-purple iridescent ring for attendee photo/headshot (or modern builder avatar fallback).
+   - Prominent attendee name, university chapter badge, and builder track badge.
+   - Gradient action badge: *"SECURE YOUR SPOT, IT'S FREE!"*.
+   - Big bold punchy *"Anticipate!!"* typography.
+   - Architectural backdrop representation of the **Ilorin Innovation Hub** with date and venue details.
+
+4. **Footer Redesign (Matching Flyer Exact Layout)**:
+   - Circular social icon badges for X, LinkedIn, TikTok, and Instagram grouped next to the official handle: **`awsre.invent`**.
+   - Clear ticket reminder directing attendees to register for gate entry on **Trankets** (`https://trankets.com/events/aws-re-invent`).
+
+5. **Portrait Canvas & Sharing**:
+   - Upgraded canvas rendering to vertical poster format (800 × 1000 px) matching the flyer's aspect ratio.
+   - Web Share API Level 2 file sharing directly into WhatsApp on mobile + automatic image download and caption copy on desktop.
