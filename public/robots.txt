@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.aws-reinvent-watch-and-build-party.pxxlspace.cv/sitemap.xml
+Sitemap: https://aws-reinvent-kwara.vercel.app/sitemap.xml
